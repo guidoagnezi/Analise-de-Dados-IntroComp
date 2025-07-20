@@ -16,4 +16,4 @@ Este projeto tem como objetivo explorar e analisar os dados da edição de 2024 
 ### Usando `pip`:
 
 ```bash
-pip install pandas rapidfuzz
+pip install pandas rapidfuzz matplotlib
