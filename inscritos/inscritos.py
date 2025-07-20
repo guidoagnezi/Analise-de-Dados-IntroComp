@@ -88,3 +88,9 @@ def relacao_escola_agrupada(df: pd.DataFrame, limite_similaridade=70):
 def relacao_tipo_escola(df: pd.DataFrame):
     # Retorna a relação do tipo das escolas com mais inscritos
     return df['tipo escola'].value_counts()
+
+# =========================FUNÇÕES DE ANÁLISE MULTIVARIÁVEIS:=========================
+
+def relacao_sabem_programar_e_possuem_internet(df: pd.DataFrame):
+    # Retorna a relação dos inscritos que possuem tanto internet quanto computador
+    return pd.crosstab(df['tem computador'], df['tem internet'])
