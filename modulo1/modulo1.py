@@ -23,7 +23,6 @@ def concatena_mat_vesp(dfm: pd.DataFrame, dfv: pd.DataFrame) -> pd.DataFrame:
 
     return df_completo
 
-
 def relacao_aprovados(df: pd.DataFrame):
     return df['resultado'].value_counts()
 

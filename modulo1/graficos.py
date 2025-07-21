@@ -40,10 +40,10 @@ def plot_notas_prova_por_cidade(df: pd.DataFrame):
 
 def plot_menor_media_workings(df: pd.DataFrame):
     medias = m1.relacao_menor_media_working(df)
-    semanas = [f'W{i}' for i in range(1, 8)]
+    workings = [f'W{i}' for i in range(1, 8)]
 
     plt.figure(figsize=(8, 5))
-    plt.bar(semanas, medias, color='steelblue')
+    plt.bar(workings, medias, color='steelblue')
     plt.ylabel('Média Geral')
     plt.title('Média Geral por Working (W1 a W7)')
     plt.grid(axis='y', linestyle='--', alpha=0.7)
